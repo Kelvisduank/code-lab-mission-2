@@ -69,7 +69,7 @@ Request → Route → Controller → Model → Response
 ## 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/rocket-shipments-api.git
+git clone https://github.com/seu-usuario/code-lab-mission2.git
 ```
 
 ## 2️⃣ Instale as dependências
