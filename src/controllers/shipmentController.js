@@ -9,7 +9,7 @@ const get = (req, res) => {
   const shipment = shipmentModel.getById(id);
 
   if (!shipment) {
-    return res.status(404).json({ message: "Shipment not found" });
+    return res.status(404).json({ message: " Ops! Remessa não encontrada" });
   }
 
   res.json(shipment);
@@ -19,7 +19,7 @@ const create = (req, res) => {
   const { weight, status } = req.body;
 
   if (!weight || !status) {
-    return res.status(400).json({ message: "Weight and status required" });
+    return res.status(400).json({ message: "Tamanho e status necessários!" });
   }
 
   const newShipment = shipmentModel.create({ weight, status });
@@ -33,7 +33,7 @@ const update = (req, res) => {
   const updatedShipment = shipmentModel.update(id, req.body);
 
   if (!updatedShipment) {
-    return res.status(404).json({ message: "Shipment not found" });
+    return res.status(404).json({ message: " Ops! Remessa não encontrada" });
   }
 
   res.json(updatedShipment);
@@ -45,7 +45,7 @@ const remove = (req, res) => {
   const deleted = shipmentModel.remove(id);
 
   if (!deleted) {
-    return res.status(404).json({ message: "Shipment not found" });
+    return res.status(404).json({ message: " Ops! Remessa não encontrada" });
   }
 
   res.status(204).send();
