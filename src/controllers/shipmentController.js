@@ -16,13 +16,13 @@ const get = (req, res) => {
 };
 
 const create = (req, res) => {
-  const { weight, status } = req.body;
+  const { weight, status, origin, destination, carID, date } = req.body;
 
-  if (!weight || !status) {
-    return res.status(400).json({ message: "Tamanho e status necessários!" });
+  if (!weight || !status || !origin || !destination || !carID || !date) {
+    return res.status(400).json({ message: "Tamanho, status, origem, destino, ID do carro e data são necessários!" });
   }
 
-  const newShipment = shipmentModel.create({ weight, status });
+  const newShipment = shipmentModel.create({ weight, status, origin, destination, carID, date });
 
   res.status(201).json(newShipment);
 };
