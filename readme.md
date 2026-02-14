@@ -133,8 +133,12 @@ Content-Type: application/json
 ```json
 {
   "id": 1,
-  "weight": 100,
-  "status": "pending"
+  "weight": 20,
+  "status": "entregue",
+  "origin": "Taubaté - SP",
+  "destination": "São JOão das missões MG",
+  "carID": 1,
+  "date": "12/12/2026"
 }
 ```
 
