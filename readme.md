@@ -2,7 +2,7 @@
 
 ![Node](https://img.shields.io/badge/Node.js-18+-green)
 ![Express](https://img.shields.io/badge/Express-4.x-black)
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status](https://img.shields.io/badge/status-concluido-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
 API REST desenvolvida com **Node.js** e **Express** para gerenciamento de envios (shipments).
